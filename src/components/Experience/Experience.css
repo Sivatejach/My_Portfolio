@@ -1,0 +1,15 @@
+/* General styles */
+h3, p, small {
+    color: black; /* Change text color to black */
+  }
+  
+  /* TimelineDot - Change primary blue color to black */
+  .MuiTimelineDot-root {
+    background-color: black !important;
+  }
+  
+  /* TimelineConnector - Change blue connector line to black */
+  .MuiTimelineConnector-root {
+    background-color: black !important;
+  }
+  

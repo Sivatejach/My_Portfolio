@@ -1,0 +1,43 @@
+/* Global Container Styling */
+.container {
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Apply a flexbox layout to the container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centers content horizontally */
+  justify-content: center;
+
+}
+
+/* Adjust the layout for larger screens (example: screens above 768px) */
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Ensure centering on larger screens */
+  }
+}
+
+.projects-container{
+
+  background-color: black;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

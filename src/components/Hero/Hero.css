@@ -1,0 +1,133 @@
+/* Hero Section */
+.hero-container {
+  display: flex;
+  justify-content: space-evenly; /* Ensures text left, image right */
+  align-items: center;
+  padding: 2rem 4rem;
+  background-color: white;
+  color: black;
+  min-height: 70vh;
+  width: 100%;
+}
+
+/* Content Styling */
+.hero-content {
+  max-width: 45%;
+}
+
+.hero-title {
+  font-size: 2.5rem; /* Reduce size for balance */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.hero-description {
+  font-size: 1.1rem; /* Slightly smaller */
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Image Section */
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+/* Image Wrapper */
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+/* Image */
+.img-container {
+  width: 100%;
+  max-width: 300px; /* Larger image */
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects */
+.img-wrapper:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
+}
+
+.img-container:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+      justify-content: center; /* Center content */
+      align-items: center;
+  }
+
+  .hero-content {
+      max-width: 80%; /* Reduce width to avoid too much text stretching */
+      margin-bottom: 1rem;
+  }
+
+  .hero-title {
+      font-size: 2rem;
+  }
+
+  .hero-description {
+      font-size: 1rem;
+  }
+
+  .hero-img {
+      max-width: 60%; /* Prevent the image from becoming too small */
+  }
+
+  .img-container {
+      max-width: 250px; /* Keep image slightly larger */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+      max-width: 90%;
+  }
+
+  .hero-title {
+      font-size: 1.8rem;
+  }
+
+  .hero-description {
+      font-size: 0.95rem;
+  }
+
+  .hero-img {
+      max-width: 70%;
+  }
+
+  .img-container {
+      max-width: 220px;
+  }
+}
+/* Apply a black and white gradient effect */
+.gradient-text {
+  background: linear-gradient(-45deg, black, white, black);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 3s infinite linear;
+  font-weight: bold;
+}
+
+/* Animate the gradient */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

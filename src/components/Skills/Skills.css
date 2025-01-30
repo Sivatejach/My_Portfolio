@@ -1,0 +1,92 @@
+/* Ensure skills-container is centered */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically (if needed) */
+    margin: 4rem auto; /* Centers it horizontally */
+    padding: 2.5rem;
+    border-radius: 1rem; /* Ensures border-radius applies properly */
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    background: black; /* Ensure black background covers all content */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Skills Section Title */
+.skills-container h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+    color: white; /* White text for title */
+}
+
+/* Main skills-content Wrapper */
+.skills-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap properly */
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* Grid layout for skills */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+
+/* Ensuring cards don’t shrink unexpectedly */
+.skills-card {
+    flex: 1 1 calc(50% - 1.5rem); /* 2 cards per row */
+    max-width: 100%;
+}
+
+/* Skill description */
+.skills-info {
+    flex: 1;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills-content {
+        flex-direction: row;
+        
+        flex-wrap: wrap; /* Wrap items */
+        gap: 2rem;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr); /* Keep two columns */
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+        gap: 1rem;
+    }
+
+    .skills-container {
+        padding: 1.5rem;
+    }
+
+    .skills-card {
+        flex: 1 1 100%; /* Full width for small screens */
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .skills-icon {
+        width: 3rem;
+        height: 3rem;
+        top: -0.8rem;
+        left: -0.8rem;
+    }
+}

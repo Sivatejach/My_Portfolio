@@ -1,0 +1,56 @@
+.project-item-container {
+  width: 339px;
+  background: #ffffff;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  max-height: 450px;
+}
+
+.project-item-image {
+  width: 100%;
+  border: 1px solid transparent;
+  
+  border-radius: 5px;
+  
+  height: 60%;
+}
+
+.project-item-details-container {
+  padding: 32px 24px 32px 24px;
+}
+
+.project-item-title {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #183b56;
+  margin: 0;
+}
+
+.project-item-description {
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 12px;
+  margin-bottom: 0;
+  color: #7b8794;
+}
+.link-button{
+  background-color: black;
+  color: white;
+  border: none;
+}
+.link-button:hover{
+  background-color: black;
+  color: white;
+}
+.link-button:active{
+  background-color: black;
+  color: white;
+}

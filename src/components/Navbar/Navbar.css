@@ -1,0 +1,175 @@
+.nav-content svg {
+    width: 22px; /* Slightly larger for better visibility */
+    height: 22px;
+}
+
+.nav-wrapper {
+    background: linear-gradient(90deg, #000000, #434343); /* Sleek black-to-gray gradient */
+    padding: 1rem 0; /* Consistent padding */
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(10px); /* Subtle blur effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a floating effect */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Align logo vertically */
+    margin-left: 20px;
+    /* Add spacing between logo elements */
+}
+.menu-container{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;         
+}
+
+.nav-content ul {
+    display: flex;
+    align-items: center; /* Align menu items vertically */
+    gap: 2rem; /* Add spacing between menu items */
+    list-style: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-content li {
+    margin: 0; /* Remove extra margin */
+}
+
+.menu-item {
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1rem; /* Slightly larger font size */
+    font-weight: 600; /* Bold for emphasis */
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+.menu-item:hover {
+    color: #b3b3b3; /* Light gray on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+.contact-btn {
+    font-size: 1rem; /* Slightly larger button text */
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000; /* Black text for contrast */
+    background: #fff; /* White background */
+    padding: 0.7rem 2.5rem; /* Larger padding */
+    border: 1.5px solid #000; /* Black border */
+    border-radius: 0.3rem; /* Slightly rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.contact-btn:hover {
+    background: #000; /* Black background on hover */
+    color: #fff; /* White text for contrast */
+    border-color: #000; /* Keep border black */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+.menu-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #000; /* Black border for contrast */
+    border-radius: 0.4rem; /* Subtle rounded corners */
+    color: #000; /* Black icon color */
+    background: #fff; /* White background */
+    line-height: 0;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    display: none; /* Hidden by default for larger screens */
+}
+
+.menu-btn:hover {
+    color: #fff; /* White icon on hover */
+    background: #000; /* Black background on hover */
+    border: 1.5px solid #000; /* Black border */
+    transform: scale(1.1); /* Slightly enlarge for emphasis */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+/* Make the button visible for smaller screens */
+
+
+@media (max-width :425px){
+    .logo{
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+    }
+    .menu-container{
+        margin: 5px;
+    }
+}
+@media (max-width: 769px) {
+    .menu-btn {
+        display: flex;
+    }
+
+    .nav-content ul {
+        display: none; /* Hide menu items by default */
+    }
+
+    .nav-content ul.active {
+        display: flex; /* Show menu when active */
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute;
+        top: 60px; /* Adjust based on navbar height */
+        right: 1rem;
+        background: #fff; /* White background */
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    }
+
+    .nav-content ul.active li a {
+        color: #000; /* Black text for menu items */
+    }
+
+    .nav-content ul.active li a:hover {
+        color: #fff; /* White text on hover */
+        background: #000; /* Black background on hover */
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+    }
+}
+.nav-content {
+    color: #ffffff; /* White text for contrast */
+    display: flex;
+    justify-content: space-between; /* Spread logo and menu items */
+    align-items: center;
+    width: 100%; /* Ensure full width */
+    max-width: 1200px; /* Keep navbar within container */
+    padding: 0 1rem; /* Use padding instead of margin */
+    margin: 0 auto; /* Center horizontally */
+}
+
+@media (max-width: 320px) {
+    .menu-container {
+        margin-right: 5px; /* Reduce extra margin */
+    }
+
+    .nav-content {
+        padding: 0 0.5rem; /* Reduce padding for small screens */
+    }
+}
+.nav-wrapper svg {
+    color: white !important;  /* Forces the icon color to white */
+}
+.nav-wrapper svg.fa-s, 
+.nav-wrapper svg.fa-t {
+    color: white !important;
+}

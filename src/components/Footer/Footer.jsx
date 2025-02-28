@@ -17,7 +17,7 @@ export default function Footer() {
             <a href="https://www.linkedin.com/in/sivatejach/"><Linkedin className='icon'/></a>
           </div>
           <div>
-          <a href="https://x.com/Tej2k3"><FontAwesomeIcon icon="fa-brands fa-x-twitter fa-lg" className='icon'/></a>
+          <a href="https://x.com/sivateja_sharma"><FontAwesomeIcon icon="fa-brands fa-x-twitter fa-lg" className='icon'/></a>
           </div>
           <div>
             <a href='mailto:chsteja2003@gmail.com'><Mail className='icon'/></a>

@@ -8,11 +8,13 @@
   color: black;
   min-height: 70vh;
   width: 100%;
+  padding: 50px;
 }
 
 /* Content Styling */
 .hero-content {
   max-width: 45%;
+  margin-top: 30px;
 }
 
 .hero-title {
@@ -34,6 +36,7 @@
   justify-content: center;
   align-items: center;
   max-width: 50%;
+  margin-bottom: 50px;
 }
 
 /* Image Wrapper */
@@ -93,6 +96,7 @@
     text-align: center;
     padding: 1rem;
     justify-content: center;
+    margin: 20px;
     align-items: center;
   }
 

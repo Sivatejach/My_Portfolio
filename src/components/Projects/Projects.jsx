@@ -149,6 +149,7 @@ const tabsList = [
   // {tabId: 'PYTHON', displayText: 'Python'},
   {tabId: 'DYNAMIC', displayText: 'Dynamic'},
   {tabId: 'RESPONSIVE', displayText: 'Responsive'},
+  {tabId: 'DATA ANALYTICS', displayText: 'Data Analytics'},
 ]
 const projectsList = [
   {
@@ -247,7 +248,15 @@ const projectsList = [
     projectLink:"https://github.com/Sivatejach/ML-Mini-Project",
     description: 'AI based disease prediction tool aids early detection.',
   },
-];
+  {
+    projectId: 16,
+    category: 'DATA ANALYTICS',
+    imageURL: 'https://res-console.cloudinary.com/dqc90vi99/media_explorer_thumbnails/2e7a6a6a7ddda8eb3e7c84e2fae19754/detailed',
+    title: 'Data Analytics',
+    projectLink:"https://drive.google.com/file/d/1r5wB0jvX4l3FN32XFzxQBDpohBteO1BP/view",
+    description: 'Developed an interactive Power BI dashboard for RealMart to analyze sales trends, category performance, and state-wise distribution, enhancing data-driven decision-making',
+  }
+  ];
 
 
 class Projects extends Component {
@@ -287,8 +296,6 @@ class Projects extends Component {
             />
           ))}
         </ul>
-
-        {/* Projects Section (Responsive Layout Without <Row>) */}
         <div className="project-list-container">
           {filteredProjects.map(projectDetails => (
             <ProjectItem key={projectDetails.projectId} projectDetails={projectDetails} />

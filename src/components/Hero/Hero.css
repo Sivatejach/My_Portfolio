@@ -63,59 +63,102 @@
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* Button Styling */
+.hero-button {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: inherit; /* Ensures it matches the overall font */
+  border-radius: 0.5rem; /* Matches other border-radius styles */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover & Focus Effect */
+.hero-button:hover, .hero-button:focus {
+  background-color: black;
+  color: white;
+  border-color: black;
+  transform: scale(1.05);
+}
+
+/* Responsive Design - Tablets */
 @media (max-width: 768px) {
   .hero-container {
-      flex-direction: column;
-      text-align: center;
-      padding: 1rem;
-      justify-content: center; /* Center content */
-      align-items: center;
-  }
-
-  .hero-content {
-      max-width: 80%; /* Reduce width to avoid too much text stretching */
-      margin-bottom: 1rem;
-  }
-
-  .hero-title {
-      font-size: 2rem;
-  }
-
-  .hero-description {
-      font-size: 1rem;
+    flex-direction: column-reverse; /* Image first, text below */
+    text-align: center;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero-img {
-      max-width: 60%; /* Prevent the image from becoming too small */
+    max-width: 60%;
+    margin-bottom: 1rem; /* Space between image and text */
+  }
+
+  .hero-content {
+    max-width: 80%;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
   }
 
   .img-container {
-      max-width: 250px; /* Keep image slightly larger */
+    max-width: 250px;
+  }
+
+  /* Smaller Button */
+  .hero-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
   }
 }
 
+/* Responsive Design - Mobile */
 @media (max-width: 480px) {
-  .hero-content {
-      max-width: 90%;
-  }
-
-  .hero-title {
-      font-size: 1.8rem;
-  }
-
-  .hero-description {
-      font-size: 0.95rem;
+  .hero-container {
+    flex-direction: column-reverse; /* Image first, text below */
   }
 
   .hero-img {
-      max-width: 70%;
+    max-width: 70%;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content {
+    max-width: 90%;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
   }
 
   .img-container {
-      max-width: 220px;
+    max-width: 220px;
+  }
+
+  /* Even Smaller Button */
+  .hero-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
   }
 }
-/* Apply a black and white gradient effect */
+
+/* Gradient Text Effect */
 .gradient-text {
   background: linear-gradient(-45deg, black, white, black);
   background-size: 400% 400%;

@@ -251,7 +251,7 @@ const projectsList = [
   {
     projectId: 16,
     category: 'DATA ANALYTICS',
-    imageURL: 'https://res-console.cloudinary.com/dqc90vi99/media_explorer_thumbnails/2e7a6a6a7ddda8eb3e7c84e2fae19754/detailed',
+    imageURL: 'https://res.cloudinary.com/dqc90vi99/image/upload/v1743218827/uhdmomiujsyjbe2zkwzc.png'  ,
     title: 'Data Analytics',
     projectLink:"https://drive.google.com/file/d/1r5wB0jvX4l3FN32XFzxQBDpohBteO1BP/view",
     description: 'Developed an interactive Power BI dashboard for RealMart to analyze sales trends, category performance, and state-wise distribution, enhancing data-driven decision-making',

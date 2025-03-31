@@ -10,7 +10,7 @@ const Hero = () => {
           Hi, I'm <span className="gradient-text">Siva Teja</span>
         </h2>
         <p className="hero-description">Passionate Web Developer</p>
-        <a href="https://drive.google.com/file/d/17Cvq8W0WkzX2xr9y_9tBvloAHXYV0Rd9/view?usp=drive_link" target="_blank">
+        <a href="https://drive.google.com/file/d/1uwdB1tiDyy7qebHlcjA28aAslG-m-Rsq/view?usp=drive_link" target="_blank">
         <button className="hero-button">Resume/CV</button>
         </a>
       </div>

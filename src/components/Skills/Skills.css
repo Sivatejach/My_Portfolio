@@ -1,3 +1,91 @@
+/* .skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    background: black;
+    overflow: hidden;
+}
+
+.skills-container h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+    color: white;
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+
+.skills-card {
+    flex: 1 1 calc(50% - 1.5rem);
+    max-width: 100%;
+}
+
+.skills-info {
+    flex: 1;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .skills-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .skills-container {
+        padding: 1.5rem;
+    }
+
+    .skills-card {
+        flex: 1 1 100%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .skills-icon {
+        width: 3rem;
+        height: 3rem;
+        top: -0.8rem;
+        left: -0.8rem;
+    }
+}
+ */
+
+
+
 /* Ensure skills-container is centered */
 .skills-container {
     display: flex;
@@ -16,77 +104,76 @@
 
 /* Skills Section Title */
 .skills-container h5 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 3.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
     color: white; /* White text for title */
 }
 
-/* Main skills-content Wrapper */
+/* Skills Wrapper */
 .skills-content {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap properly */
-    justify-content: center;
-    gap: 3rem;
+    flex-direction: column;
+    gap: 1.5rem;
     align-items: center;
+    width: 100%;
 }
 
-/* Grid layout for skills */
-.skills {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem;
+/* Styling skill rows */
+.skill-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
 }
 
-/* Ensuring cards don’t shrink unexpectedly */
-.skills-card {
-    flex: 1 1 calc(50% - 1.5rem); /* 2 cards per row */
-    max-width: 100%;
-}
-
-/* Skill description */
-.skills-info {
-    flex: 1;
+/* Skill buttons */
+.skill-button {
+    padding: 0.8rem 1.5rem;
+    background: #2d2d2d; /* Dark grey button */
     color: white;
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-/* Responsive adjustments */
+/* Hover effect */
+.skill-button:hover {
+    background: #555; /* Lighten on hover */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .skills-content {
-        flex-direction: row;
-        
-        flex-wrap: wrap; /* Wrap items */
-        gap: 2rem;
+    .skills-container {
+        padding: 2rem;
+    }
+    
+    .skill-button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
     }
 
-    .skills {
-        grid-template-columns: repeat(2, 1fr); /* Keep two columns */
-        gap: 1.5rem;
+    .skill-row {
+        gap: 0.8rem;
     }
 }
 
 @media (max-width: 480px) {
-    .skills {
-        grid-template-columns: 1fr; /* Single column for very small screens */
-        gap: 1rem;
-    }
-
     .skills-container {
         padding: 1.5rem;
     }
 
-    .skills-card {
-        flex: 1 1 100%; /* Full width for small screens */
-        max-width: 90%;
-        margin: 0 auto;
+    .skill-button {
+        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
     }
 
-    .skills-icon {
-        width: 3rem;
-        height: 3rem;
-        top: -0.8rem;
-        left: -0.8rem;
+    .skill-row {
+        flex-direction: row;
+        gap: 0.6rem;
     }
 }

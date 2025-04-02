@@ -1,47 +1,44 @@
-/* Skills Card */
-.skills-card {
-    border: 1.5px solid white; /* White border */
+/* .skills-card {
+    border: 1.5px solid white;
     padding: 2rem;
     border-radius: 0.5rem;
-    background: black; /* Transparent to blend with black theme */
-    color: white; /* White text for contrast */
-    position: relative; /* For absolute positioning of the icon */
-    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+    background: black;
+    color: white;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
 .skills-card:hover {
-    background: white; /* Change card background to white on hover */
-    color: black; /* Change text to black */
-    border-color: black; /* Change border to black */
+    background: white;
+    color: black;
+    border-color: black;
 }
 
-/* Skill Icon Positioned at Top-Left Corner */
 .skills-icon {
     width: 4rem;
     height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white; /* Icon container background remains white */
+    background: white;
     border-radius: 0.65rem;
-    border: 1.5px solid white;  
-    position: absolute; /* Top-left placement */
-    top: -1.5rem; 
+    border: 1.5px solid white;
+    position: absolute;
+    top: -1.5rem;
     left: -1.5rem;
     transition: color 0.3s ease, background 0.3s ease;
 }
+
 .skills-card:hover .skills-icon {
-    background: black; /* Background turns black on hover */
-    color: white !important; /* Ensure the icon turns white */
+    background: black;
+    color: white !important;
     border-color: black;
 }
 
 .skills-card:hover .skills-icon svg {
-    color: white !important; /* Force icon to change to white */
+    color: white !important;
 }
 
-
-/* Skill Title */
 .skills-card span {
     font-size: 1.3rem;
     font-weight: 500;
@@ -49,22 +46,23 @@
     display: block;
     text-align: center;
 }
+
 .skills-container {
     margin: 4rem 0;
     position: relative;
-    background: black; /* Ensure black background covers all content */
+    background: black;
     padding: 2.5rem;
     border-radius: 0.65rem;
     text-align: center;
     width: 100%;
     max-width: 1200px;
-    overflow: hidden; /* Prevent overflow */
+    overflow: hidden;
 }
 
 .skills-content {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Allow content to wrap */
+    flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
     align-items: center;
@@ -76,35 +74,34 @@
     grid-gap: 3rem;
 }
 
-/* Responsive Fix for Smaller Screens */
 @media (max-width: 768px) {
     .skills-content {
-        flex-direction: column; /* Stack vertically */
+        flex-direction: column;
         align-items: center;
         gap: 2rem;
     }
 
     .skills {
-        grid-template-columns: 1fr; /* Single column for small screens */
+        grid-template-columns: 1fr;
         gap: 2rem;
     }
 }
 
 @media (max-width: 375px) {
     .skills-container {
-        padding: 1.5rem; /* Reduce padding */
+        padding: 1.5rem;
     }
 
     .skills-card {
-        padding: 1rem; /* Smaller padding for smaller devices */
-        max-width: 90%; /* Prevents overflow */
-        margin: 0 auto; /* Centers cards */
+        padding: 1rem;
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     .skills-icon {
-        width: 3rem; /* Reduce icon size */
+        width: 3rem;
         height: 3rem;
         top: -1rem;
         left: -1rem;
     }
-}
+} */
